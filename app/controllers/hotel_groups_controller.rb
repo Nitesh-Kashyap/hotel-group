@@ -66,7 +66,7 @@ class HotelGroupsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def todo_list_params
-      params.require(:hotel_group).permit(:name, hotels_attributes: Hotel.attribute_names.map(&:to_sym).push(:_destroy))
+    def hotel_group_params
+      params.require(:hotel_group).permit(:name, hotels_attributes: Hotel.attribute_names.map(&:to_sym).push(:_destroy, :_id))
     end
 end

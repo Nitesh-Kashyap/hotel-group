@@ -3,5 +3,11 @@
     <strong>Name:</strong>
     <%= hotel_group.name %>
   </p>
+  <p>
+    <strong>Hotels:</strong>
+    <% hotel_group.hotels.each do |hotel| %>
+    <%= hotel.name %>
+    <% end %>
+  </p>
 
 </div>

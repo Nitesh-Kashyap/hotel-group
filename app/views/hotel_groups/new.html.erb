@@ -1,7 +1,10 @@
-<tr class="nested-fields">
-  <td>
-    <%= link_to_remove_association "remove hotel", f, class: 'btn btn-primary btn-xs' %>
-  </td>
-  <td><%= f.input :description, label: false %></td>
-  <td><%= f.input :done, label: false %></td>
-</tr>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="text-center">Add New Hotel Group</h3>
+    </div>
+    <div class="panel-body">
+      <%= render 'form' %>
+    </div>
+  </div>
+</div>
