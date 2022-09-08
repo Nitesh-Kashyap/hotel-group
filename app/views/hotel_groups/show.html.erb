@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @hotel_group %>
+
+<div>
+  <%= link_to "Edit this hotel group", edit_hotel_group_path(@hotel_group) %> |
+  <%= link_to "Back to hotel groups", hotel_groups_path %>
+
+  <%= button_to "Destroy this hotel group", @hotel_group, method: :delete %>
+</div>
