@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Hotel groups</h1>
+
+<div id="rooms">
+  <% @rooms.each do |room| %>
+    <%= render room %>
+    <p>
+      <%= link_to "Show this hotel group", room %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New hotel group", new_room_path %>

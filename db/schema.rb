@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_08_122945) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_10_075957) do
   create_table "hotel_groups", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -23,6 +23,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_08_122945) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["hotel_group_id"], name: "index_hotels_on_hotel_group_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.integer "room_no"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

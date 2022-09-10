@@ -1,0 +1,13 @@
+<div id="<%= dom_id room %>">
+  <p>
+    <strong>Name:</strong>
+    <%= room.name %>
+  </p>
+  <p>
+    <strong>Hotels:</strong>
+    <% room.hotels.each do |hotel| %>
+    <%= hotel.name %>
+    <% end %>
+  </p>
+
+</div>
