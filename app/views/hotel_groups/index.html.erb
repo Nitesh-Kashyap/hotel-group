@@ -1,14 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<%= link_to "New hotel group", new_hotel_group_path, class: "btn btn-success btn-sm pull-right" %>
 
 <h1>Hotel groups</h1>
-
 <div id="hotel_groups">
   <% @hotel_groups.each do |hotel_group| %>
     <%= render hotel_group %>
     <p>
-      <%= link_to "Show this hotel group", hotel_group %>
+      <%= link_to "Show this hotel group", hotel_group, class: "btn btn-warning btn-sm" %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New hotel group", new_hotel_group_path %>

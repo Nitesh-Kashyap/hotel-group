@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :hotel_groups
-  resources :rooms
+  resources :hotels
   devise_for :users
   root "hotel_groups#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

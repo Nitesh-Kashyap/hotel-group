@@ -6,7 +6,7 @@
   <p>
     <strong>Hotels:</strong>
     <% hotel_group.hotels.each do |hotel| %>
-    <%= hotel.name %>
+      <%= link_to hotel.name, hotel_path(hotel) %>
     <% end %>
   </p>
 

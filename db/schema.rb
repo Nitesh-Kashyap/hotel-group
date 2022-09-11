@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_10_075957) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_11_074211) do
   create_table "hotel_groups", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -29,6 +29,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_10_075957) do
     t.integer "room_no"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "hotel_id", null: false
+    t.index ["hotel_id"], name: "index_rooms_on_hotel_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,4 +55,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_10_075957) do
   end
 
   add_foreign_key "hotels", "hotel_groups"
+  add_foreign_key "rooms", "hotels"
 end
