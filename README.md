@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## hotel group
 
-Things you may want to cover:
+### A web application to show nested forms
 
-* Ruby version
+* Ruby version - ruby 3.0.2p107
 
-* System dependencies
+* Rails version - Rails 7.0.3.1
 
-* Configuration
+## Demo Video - https://drive.google.com/file/d/1hquGw-9Q07pBWNBxRiTFL8bABc4g9pTS/view
 
-* Database creation
+![Screenshot of web application.](https://drive.google.com/file/d/1GhrlRQ95FPDIJR3p-l81KVW86xMluhqg/view)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
