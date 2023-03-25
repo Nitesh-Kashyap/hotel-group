@@ -10,5 +10,5 @@
 
 ## Demo Video - https://drive.google.com/file/d/1hquGw-9Q07pBWNBxRiTFL8bABc4g9pTS/view
 
-![Screenshot of web application.](https://drive.google.com/file/d/1GhrlRQ95FPDIJR3p-l81KVW86xMluhqg/view)
+![Screenshot of web application.](https://github.com/Nitesh-Kashyap/demo/blob/main/addhotelgroup.png)
 
